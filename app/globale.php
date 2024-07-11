@@ -1,7 +1,5 @@
 <?php
 
-require_once "database.php";
-
 define("DOCUMENT_ROOT", dirname(__DIR__));
 define("RESSOURCES_DIR", dirname(__DIR__) . '/public/');
 define("TEMPLATE_DIR", [dirname(__DIR__) . '/templates/']);
