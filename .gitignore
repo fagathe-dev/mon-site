@@ -1,0 +1,5 @@
+/vendor/
+/public/uploads/
+launch-*.sh
+.env
+.env.prod

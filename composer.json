@@ -1,0 +1,25 @@
+{
+  "name": "fagathe/mon-site",
+  "description": "Mon site portfolio",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/fagathe-dev/framework.git"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "fagathe/framework": "dev-master@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fagathe\\MonSite\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "AGATHE Frédérick",
+      "email": "agathefrederick@gmail.com"
+    }
+  ]
+}

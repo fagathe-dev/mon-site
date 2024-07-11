@@ -1,0 +1,12 @@
+[11-07-2024 22:24:11   debug] Route found for / 
+[11-07-2024 22:24:12   debug] Route found for / 
+[11-07-2024 22:24:46   debug] Route found for / 
+[11-07-2024 22:24:46   debug] Access to controller 2024-07-11 22:24:46::index with params [] 
+[11-07-2024 22:25:27   debug] Route found for / 
+[11-07-2024 22:25:27   debug] Access to controller 2024-07-11 22:25:27::index with params [] 
+[11-07-2024 22:27:25   debug] Route found for / 
+[11-07-2024 22:27:25   debug] Access to controller 2024-07-11 22:27:25::index with params [] 
+[11-07-2024 22:30:32   debug] Route found for / 
+[11-07-2024 22:30:32   debug] Access to controller 2024-07-11 22:30:32::index with params [] 
+[11-07-2024 22:36:12   debug] Route found for / 
+[11-07-2024 22:36:12   debug] Access to controller 2024-07-11 22:36:12::index with params [] 
