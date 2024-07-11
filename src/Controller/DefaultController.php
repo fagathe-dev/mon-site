@@ -1,9 +1,9 @@
 <?php
 namespace Fagathe\MonSite\Controller;
 
-use Fagathe\MonSite\Entity\User;
+
+use Fagathe\Framework\Database\Model\UserModel;
 use Fagathe\MonSite\Form\UserForm;
-use Fagathe\MonSite\Model\UserModel;
 use Fagathe\Framework\Controller\AbstractController;
 
 use Fagathe\Framework\Helpers\DateTimeHelperTrait;
