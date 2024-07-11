@@ -21,5 +21,8 @@
       "name": "AGATHE Frédérick",
       "email": "agathefrederick@gmail.com"
     }
-  ]
+  ],
+  "require-dev": {
+    "symfony/var-dumper": "^7.1"
+  }
 }

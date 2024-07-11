@@ -1,5 +1,9 @@
-/vendor/
-/public/uploads/
-launch-*.sh
-.env
-.env.prod
+/vendor
+/var/logs
+/app/database.php
+/app/mailer.php
+/launch-*.sh
+/var
+/logs
+/.env
+/.env.*
