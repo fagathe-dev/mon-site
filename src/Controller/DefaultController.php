@@ -4,7 +4,6 @@ namespace Fagathe\MonSite\Controller;
 use Fagathe\Framework\Controller\AbstractController;
 
 use Fagathe\Framework\Helpers\DateTimeHelperTrait;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 final class DefaultController extends AbstractController
