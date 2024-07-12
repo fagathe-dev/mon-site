@@ -1,0 +1,58 @@
+[
+  {
+    "homePage": {
+      "title": "Mon porfolio développeur Web, Frédérick AGATHE",
+      "name": "Page d'accueil",
+      "url": "/",
+      "tags": [
+        {
+          "name": "description",
+          "attribute": "name",
+          "content": "CV développeur Web : création et développement de sites et d'applications Web. HTML5, CSS3, JQuery, Javascript, Bootstrap, PHP, Symfony, ..."
+        },
+        {
+          "name": "keywords",
+          "attribute": "name",
+          "content": "Frédérick AGATHE, développeur, développeur web, développeur web Paris, développeur web île-de-france, web, CV, site CV, site, application, application web, html5, css3, jquery, php, javascript"
+        },
+        {
+          "name": "og:type",
+          "attribute": "property",
+          "content": "Landing - Home Page"
+        },
+        {
+          "name": "og:title",
+          "attribute": "property",
+          "content": "Mon porfolio développeur Web, Frédérick AGATHE"
+        },
+        {
+          "name": "og:description",
+          "attribute": "property",
+          "content": "CV développeur Web : création et développement de sites et d'applications Web. HTML5, CSS3, JQuery, Javascript, Bootstrap, PHP, Symfony, ..."
+        },
+        {
+          "name": "og:url",
+          "attribute": "property",
+          "content": "https://fagathe-dev.me/"
+        },
+        {
+          "name": "og:site_name",
+          "attribute": "property",
+          "content": "{{ APP_NAME }}"
+        }
+      ]
+    },
+    "defaultTags": [
+      {
+        "name": "author",
+        "attribute": "name",
+        "content": "Frédérick AGATHE"
+      },
+      {
+        "name": "robots",
+        "attribute": "name",
+        "content": "index, follow"
+      }
+    ]
+  }
+]
