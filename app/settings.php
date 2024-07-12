@@ -1,9 +1,9 @@
 <?php
 
 // Set the application environnement : 'dev' | 'preprod' | 'prod'
-define('APP_ENV', 'dev');
+// define('APP_ENV', 'dev');
 // Set true to enable DEBUG_MODE or false otherwise
-define('APP_DEBUG', true);
+// define('APP_DEBUG', true);
 
 define('DEFAULT_DATE_TIMEZONE', 'Europe/Paris');
 

@@ -1,9 +1,6 @@
 <?php
 namespace Fagathe\MonSite\Controller;
 
-
-use Fagathe\Framework\Database\Model\UserModel;
-use Fagathe\MonSite\Form\UserForm;
 use Fagathe\Framework\Controller\AbstractController;
 
 use Fagathe\Framework\Helpers\DateTimeHelperTrait;
@@ -21,16 +18,8 @@ final class DefaultController extends AbstractController
      */
     public function index(array $params): Response
     {
-        $request = Request::createFromGlobals();
-        $userModel = new UserModel();
-        $user = $userModel->find(3);
-        $form = $this->createForm(UserForm::class, $user->toArray());
 
-        $form->handleRequest($request);
-        if ($form->isSubmitted()) {
-        }
-
-        return $this->render('web/index.twig', compact('form'));
+        return $this->render('website/home/index.twig');
     }
 
     /**

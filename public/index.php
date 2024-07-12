@@ -9,5 +9,6 @@ use Fagathe\Framework\Router\Router;
 $routes = require DOCUMENT_ROOT . '/app/routes.php';
 define('APP_ROUTES', $routes);
 Env::load();
+require_once '../app/env.php';
 
 (new Router(APP_ROUTES))->match();
