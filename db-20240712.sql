@@ -26,7 +26,7 @@ CREATE TABLE `user` (
   `id` int NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
   `username` varchar(70) DEFAULT NULL,
   `lastname` varchar(70) DEFAULT NULL,
-  `firstname` varchar(70) DEFAULT NULL,
+  `firstname` varchar(70) DEFAULT NULL, 
   `email` varchar(180) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `roles` varchar(50) DEFAULT NULL,
