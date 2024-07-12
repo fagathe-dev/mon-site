@@ -21,14 +21,14 @@
     </div>
     <div class="row">
       {% for xp in experiences.data %}
-        <div class="col-lg-3 product-item {{ xp.niceType|lower }}">
+        <div class="col-lg-3 product-item {{ xp.type|lower }}">
           <div class="card rounded-1 card-animate">
             <div class="card-body">
               <p class="text-primary mb-0">{{ xp.name|length > 21 ? (xp.name|slice(0, 22) ~ '...') : xp.name }}</p>
               <p class="text-black mb-0">{{ xp.place }}</p>
-              <p class="text-muted mb-0">{{ xp.startYear }} - {{ xp.endYear ?? 'aujourd\'hui' }}</p>
+              <p class="text-muted mb-0">{{ xp.start_year }} - {{ xp.end_year ?? 'aujourd\'hui' }}</p>
               <a 
-                href="{{ url('api_website_get_single_xp', { id: xp.id }) }}" 
+                href="{{ url('website_api_get_single_xp', { id: xp.id }) }}" 
                 onclick="displayXpModal(event);"
                 data-bs-toggle="modal" 
                 data-bs-target="#xpSeeMoreModal"
