@@ -26,4 +26,13 @@ final class APIController extends AbstractController
         $id = (int) $params["id"];
         return $this->json($this->service->findProjetById($id));
     }
+
+    /**
+     * @return Response
+     */
+    public function getSingleExperience(array $params): Response
+    {
+        $id = (int) $params["id"];
+        return $this->json($this->service->findExperienceById($id));
+    }
 }
