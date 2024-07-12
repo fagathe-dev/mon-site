@@ -1,5 +1,5 @@
 <?php
-namespace Fagathe\MonSite\Controller;
+namespace Fagathe\MonSite\Controller\Website;
 
 use Fagathe\Framework\Controller\AbstractController;
 
@@ -13,7 +13,8 @@ final class DefaultController extends AbstractController
 
     private DefaultService $service;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->service = new DefaultService;
     }
 
@@ -22,15 +23,6 @@ final class DefaultController extends AbstractController
      */
     public function index(): Response
     {
-
         return $this->render('website/home/index.twig', $this->service->getData());
-    }
-
-    /**
-     * @return Response
-     */
-    public function pong(): Response
-    {
-        return $this->render('base.twig');
     }
 }

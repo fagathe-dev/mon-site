@@ -13,7 +13,7 @@ const displayProjectModal = async (event) => {
     }
 
     $("#projectName").innerText = project.name;
-    $("#projectDescription").innerText = project.description;
+    $("#projectDescription").innerHTML = project.description;
     if (project.url !== null) {
       $("#projectUrl").href = project.url;
       $("#projectUrl").classList.remove('d-none');
