@@ -1,4 +1,5 @@
 <?php
+namespace Fagathe\MonSite\Service\JSON;
 use Symfony\Component\Filesystem\Filesystem;
 
 final class DataService
@@ -20,7 +21,7 @@ final class DataService
      */
     public function setPath(string $path): self
     {
-        $this->path = self::DEFAULT_PATH_PREFIX . $path;
+        $this->path = self::DEFAULT_PATH_PREFIX . $path .'.json';
 
         return $this;
     }
