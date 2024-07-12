@@ -1,10 +1,10 @@
 <?php
 
 use Fagathe\Framework\Router\Route;
-use Fagathe\MonSite\Controller\DefaultController;
+use Fagathe\MonSite\Controller\Website\APIController;
+use Fagathe\MonSite\Controller\Website\DefaultController;
 
 return [
     new Route('/', name: 'website_home_index', action: DefaultController::class . "@index", methods: ["GET", 'POST']),
-    new Route('/login', name: 'app.login', action: DefaultController::class . "@index", methods: ["GET", 'POST']),
-    new Route('/blog/{slug}-{id}', name: 'app.blog', action: DefaultController::class . "@index", requirements: ['id' => '\d+'], methods: ["GET", 'POST']),
+    new Route('/website/api/project/{id}', name: 'website_api_get_single_project', action: APIController::class . "@getSingleProject", requirements: ['id' => '\d+'], methods: ['GET']),
 ];

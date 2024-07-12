@@ -1,5 +1,6 @@
 <?php
 namespace Fagathe\MonSite\Service\JSON;
+
 use Symfony\Component\Filesystem\Filesystem;
 
 final class DataService
@@ -21,7 +22,7 @@ final class DataService
      */
     public function setPath(string $path): self
     {
-        $this->path = self::DEFAULT_PATH_PREFIX . $path .'.json';
+        $this->path = self::DEFAULT_PATH_PREFIX . $path . '.json';
 
         return $this;
     }
@@ -50,17 +51,17 @@ final class DataService
     }
 
     /**
-     * @param string $id
+     * @param int $id
      * 
      * @return array|null
      */
-    public function find(string $id): ?array
+    public function find(int $id): ?array
     {
         $data = $this->findAll();
 
-        $d = (array) array_reduce($data, fn($carry, $item) => $id);
+        $d = (array) array_reduce($data, fn(array $carry, array $item) => $carry = $item['id'] === $id ? [...$carry, $item] : $carry, []);
 
-        return $d;
+        return array_pop($d);
     }
 
 }

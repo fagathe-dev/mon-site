@@ -19,17 +19,18 @@
         </div>
       </div>
     </div>
+    
     <div class="row">
-      {% for p in projects.data %}
+      {% for key, p in projects.data %}
         <div class="col-12 col-md-6 col-xl-4">
           <div class="card card-animate">
             <div class="card-body">
-              <img src="{{ asset(p.image) }}" srcset="{{ asset(p.image) }}" title="Image du projet {{ p.name }}" alt="Image du projet {{ p.name }}" class="card-img-top img-fluid rounded">
+              <img src="{{ asset(p.image ?? '#') }}" srcset="{{ asset(p.image ?? '#') }}" title="Image du projet {{ p.name }}" alt="Image du projet {{ p.name }}" class="card-img-top img-fluid rounded">
             </div>
             <div class="card-footer">
               <h6 class="text-black">{{ p.name }}</h6>
               <a 
-                href="{{ url('api_website_get_single_project', { id: p.id }) }}" 
+                href="{{ url('website_api_get_single_project', { id: p.id }) }}" 
                 onclick="displayProjectModal(event);"
                 class="card-subtitle text-primary"
                 data-bs-toggle="modal" 
