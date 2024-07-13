@@ -34,11 +34,6 @@
           "name": "og:url",
           "attribute": "property",
           "content": "https://fagathe-dev.me/"
-        },
-        {
-          "name": "og:site_name",
-          "attribute": "property",
-          "content": "{{ APP_NAME }}"
         }
       ]
     },
@@ -57,6 +52,16 @@
         "name": "viewport",
         "attribute": "name",
         "content": "width=device-width, initial-scale=1."
+      },
+      {
+        "name": "og:site_name",
+        "attribute": "property",
+        "content": "{{ APP_NAME }}"
+      },
+      {
+        "name": "og:image",
+        "attribute": "property",
+        "content": "/images/projets/mon-site.png"
       }
     ]
   }
