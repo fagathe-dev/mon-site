@@ -10,3 +10,15 @@
 {% endif %}
 <!-- App favicon -->
 <link rel="shortcut icon" href="{{ asset('images/logo.png') }}">
+
+{% if app.env == 'prod' %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ APP_GOOGLE_TAGMANAGER }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ APP_GOOGLE_TAGMANAGER }}');
+  </script>
+{% endif %}
