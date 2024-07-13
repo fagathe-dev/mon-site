@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fagathe-dev/framework.git",
-                "reference": "4968c866b472656eb2e85024aae3f1177370f19d"
+                "reference": "320706ef2a4b2ea6e6f7ebe2d9f1789d594572ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fagathe-dev/framework/zipball/4968c866b472656eb2e85024aae3f1177370f19d",
-                "reference": "4968c866b472656eb2e85024aae3f1177370f19d",
+                "url": "https://api.github.com/repos/fagathe-dev/framework/zipball/320706ef2a4b2ea6e6f7ebe2d9f1789d594572ef",
+                "reference": "320706ef2a4b2ea6e6f7ebe2d9f1789d594572ef",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 "source": "https://github.com/fagathe-dev/framework/tree/master",
                 "issues": "https://github.com/fagathe-dev/framework/issues"
             },
-            "time": "2024-07-12T08:35:13+00:00"
+            "time": "2024-07-12T21:16:40+00:00"
         },
         {
             "name": "graham-campbell/result-type",
