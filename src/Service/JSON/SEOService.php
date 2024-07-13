@@ -26,11 +26,11 @@ final class SEOService
         $data = array_pop($jsonData);
         $seo = $data[$page] ?? [];
 
-        $defaultTags = $this->dataService->findAll()[self::DEFAULT_TAGS] ?? [];
+        $defaultTags = $data[self::DEFAULT_TAGS] ?? [];
         if (is_array($seo) && array_key_exists(self::DEFAULT_TAGS, $seo)) {
             $seo['tags'] = array_unique(array_merge($defaultTags, $seo['tags']));
         } else {
-            $seo['tags'] = [...$seo['tags'], ...$defaultTags];
+            $seo['tags'] = [...$defaultTags, ...$seo['tags']];
         }
 
         foreach ($seo['tags'] as $value) {

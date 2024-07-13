@@ -52,7 +52,8 @@
         "name": "robots",
         "attribute": "name",
         "content": "index, follow"
-        },{
+      },
+      {
         "name": "viewport",
         "attribute": "name",
         "content": "width=device-width, initial-scale=1."
