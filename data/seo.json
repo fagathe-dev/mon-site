@@ -17,7 +17,7 @@
         },
         {
           "name": "og:type",
-          "attribute": "property",
+          "attribute": "article",
           "content": "Landing - Home Page"
         },
         {
@@ -29,11 +29,6 @@
           "name": "og:description",
           "attribute": "property",
           "content": "CV développeur Web : création et développement de sites et d'applications Web. HTML5, CSS3, JQuery, Javascript, Bootstrap, PHP, Symfony, ..."
-        },
-        {
-          "name": "og:url",
-          "attribute": "property",
-          "content": "https://fagathe-dev.me/"
         }
       ]
     },
@@ -52,16 +47,6 @@
         "name": "viewport",
         "attribute": "name",
         "content": "width=device-width, initial-scale=1."
-      },
-      {
-        "name": "og:site_name",
-        "attribute": "property",
-        "content": "{{ APP_NAME }}"
-      },
-      {
-        "name": "og:image",
-        "attribute": "property",
-        "content": "/images/projets/mon-site.png"
       }
     ]
   }
