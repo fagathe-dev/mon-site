@@ -1,4 +1,5 @@
 <?php
+
 namespace Fagathe\MonSite\Controller\Website;
 
 use Fagathe\Framework\Controller\AbstractController;
